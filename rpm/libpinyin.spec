@@ -41,10 +41,11 @@ The %{name}-tools package contains tools.
 
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 
 %build
+./autogen.sh
 %configure --disable-static
 make %{?_smp_mflags}
 
