@@ -48,7 +48,6 @@ libpinyin_dbdir		= $(libdir)/libpinyin/data
 CLEANFILES		= $(binary_model_data)
 
 interpolation2.text:
-	#wget http://downloads.sourceforge.net/libpinyin/models/model17.text.tar.gz
 	tar xvf model17.text.tar.gz -C $(top_srcdir)/data
 
 
