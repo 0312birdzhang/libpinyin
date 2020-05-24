@@ -62,7 +62,7 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 %files
 %doc AUTHORS COPYING README
 %{_libdir}/*.so.*
-%dir %{_datadir}/libpinyin-%{version}
+%dir %{_datadir}/libpinyin
 
 %files devel
 %doc
@@ -73,7 +73,7 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 
 %files data
 %doc
-%{_datadir}/libpinyin-%{version}/data
+%{_datadir}/libpinyin/data
 
 %files tools
 %{_bindir}/gen_binary_files
