@@ -41,7 +41,7 @@ The %{name}-tools package contains tools.
 
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}/%{name}
 
 
 %build
