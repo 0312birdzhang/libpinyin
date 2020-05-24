@@ -62,12 +62,12 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 %files
 %doc AUTHORS COPYING README
 %{_libdir}/*.so.*
-%dir %{_datadir}/libpinyin
+%dir %{_datadir}/libpinyin*
 
 %files devel
 %doc
-%dir %{_includedir}/libpinyin-@VERSION@
-%{_includedir}/libpinyin-@VERSION@/*
+%dir %{_includedir}/libpinyin-%{version}
+%{_includedir}/libpinyin-%{version}/*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/libpinyin.pc
 
