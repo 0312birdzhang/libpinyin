@@ -28,7 +28,6 @@ TAGS
 cscope.*
 *.la
 libpinyin.pc
-libpinyin.spec
 libpinyin.so*
 src/lookup/liblookup.a
 src/storage/libstorage.a
