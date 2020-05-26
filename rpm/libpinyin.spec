@@ -8,6 +8,7 @@ URL:            https://github.com/libpinyin/libpinyin
 Source0:        http://downloads.sourceforge.net/libpinyin/libpinyin/%{name}-%{version}.tar.gz
 
 BuildRequires:  db4-devel, glib2-devel
+BuildRequires:  autoconf, automake, libtool
 Requires:       %{name}-data%{?_isa} = %{version}-%{release}
 
 %description
@@ -62,7 +63,6 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 %files
 %doc AUTHORS COPYING README
 %{_libdir}/*.so.*
-%dir %{_datadir}/libpinyin
 
 %files devel
 %doc
@@ -73,7 +73,6 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 
 %files data
 %doc
-%{_datadir}/libpinyin/data
 
 %files tools
 %{_bindir}/gen_binary_files
